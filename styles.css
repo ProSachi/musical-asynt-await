@@ -36,6 +36,33 @@ body {
     color: var(--text-primary);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    position: relative;
+}
+
+/* Botón de volver */
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: white;
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.back-button:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateX(-4px);
+    box-shadow: var(--shadow-xl);
 }
 
 /* Contenedor principal */
